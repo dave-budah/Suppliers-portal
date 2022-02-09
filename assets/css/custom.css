@@ -1,0 +1,314 @@
+:root {
+    --dark-blue-color: #1b2c5d;
+    --lite-blue-color: #1291c3;
+    --main-text-color: #6e6e6e;
+    --second-bg-color: #c1efde;
+}
+* {
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.rounded-full {
+    border-radius: 50%;
+}
+.text-grey {
+    color: #868686 !important;
+}
+#wrapper {
+    overflow-x: hidden;
+}
+#sidebar-toggle {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+    background-image:
+            linear-gradient(to bottom, #1291c3, transparent),
+            url('../images/background.jpg');
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar-wrapper .sidebar-heading {
+    font-weight: bold;
+    color: #fff;
+}
+#sidebar-wrapper .sidebar-heading img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    margin-right: .5rem;
+}
+
+#sidebar-wrapper .menu-links li {
+    width: 10.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    margin: 1rem 2rem 1rem auto;
+    transition: .3s all ease;
+    position: relative;
+}
+.white-arrow {
+    position: absolute;
+    left: -1.5rem;
+    display: none;
+    transition: .3s all ease;
+    transition-delay: .1s;
+}
+
+#sidebar-wrapper .menu-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+#sidebar-wrapper .menu-links li:hover {
+    background-color: #fff;
+}
+#sidebar-wrapper .menu-links li:hover .white-arrow {
+    display: block;
+}
+#sidebar-wrapper .menu-links li:hover a {
+    font-size: 16px;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+}
+
+/**************Main page styling*************/
+.scroll {
+    height: 90vh;
+    overflow: auto;
+    /*scrollbar-width: thin;*/
+}
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #ddd;
+    border-radius: 15px;
+    background-image: linear-gradient(to top, #a7ddf2, #85bad6, #6797ba, #4d759e, #375481, #385481, #395580, #3a5580, #52769c, #6797ba, #85bad6, #a7ddf2);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #202b59, #1291c3);
+    border-radius: 15px;
+}
+
+
+
+/* Support for Firefox Scrollbar */
+.scroll {
+    overflow-y: scroll;
+    scrollbar-color:  #202b59 #1291c3;
+    scrollbar-width: thin;
+}
+
+/* Support for Firefox Scrollbar */
+
+.title-span {
+    position: relative;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    border-radius: 25px;
+    max-width: fit-content;
+    padding: .2rem 1rem .1rem 2.6rem;
+}
+.title-span .circle {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    left: 0;
+    top: 0;
+}
+.title-span h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main-grid {
+    border-top: 1px solid #868686;
+    border-bottom: 1px solid #868686;
+}
+.first-col {
+    border-right: 1px solid #868686;
+}
+.bottom-border {
+    border-bottom: 1px solid #868686;
+}
+/**************Main page styling*************/
+
+
+/**************Login form*************/
+
+.login-page
+{
+    position: relative;
+    min-height: 600px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+.login-page:before, .login-page:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 35px 20px #777;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+.login-page:after
+{
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    transform: rotate(4deg);
+    right: 10px;
+    left: auto;
+}
+
+.login-page h1 {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 2rem auto;
+    background: linear-gradient(to right, #202b59 20%, #1291c3 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.login-page h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 2rem auto 3rem auto;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.input-div {
+    position: relative;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+.input-div input {
+    border: none;
+    width: 100%;
+    margin-left: 2rem;
+    outline: none !important;
+    background: none;
+}
+.input-div img {
+    position: absolute;
+    left: 1rem;
+    top: .8rem;
+    width: 18px;
+}
+.login-form button {
+    padding: .5rem 4rem;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 700;
+    transition: .5s ease;
+}
+.login-form button:hover {
+    background: linear-gradient(to left, #202b59, #1291c3);
+    color: #fff;
+}
+.login-form a,
+.login-form span {
+    color: #868686;
+}
+.welcome-col {
+    height: 100%;
+    width: 100%;
+    background-image:
+            linear-gradient(to bottom, #1291c3, transparent),
+            url('../images/background.jpg');
+}
+.welcome-col h2 {
+    color: #fff !important;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.content-list,
+.content-list a {
+    color: #fff;
+}
+/**************Login form*************/
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
