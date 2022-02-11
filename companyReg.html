@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Suppliers Portal</title>
+    <meta name="description" content="Tradata website.">
+    <meta name="author" content="Tradata">
+
+    <meta property="og:title" content="Tradata website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tradata.app">
+    <meta property="og:description" content="Tradata website.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!--    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>-->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+    <!--    Sidebar -->
+    <div class="" id="sidebar-wrapper">
+        <div class="sidebar-heading align-items-center">
+            <img src="assets/images/profile.png" class="rounded-full" alt="logo">
+            <span>Username</span>
+        </div>
+
+        <ul class="my-3 bg-transparent menu-links">
+            <li><a href="" class="bg-transparent">
+                Marketing
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="" class="bg-transparent">
+                Home
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="" class="bg-transparent">
+                Dashboard
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="" class="bg-transparent">
+                Budgeting
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="invites.html" class="bg-transparent">
+                Invites
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+
+        </ul>
+    </div>
+    <!--    Sidebar -->
+
+
+    <!--        Pages Go Here -->
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <button type="button" id="sidebar-toggle"><img src="assets/images/icons/menu.png" alt="" width="30"></button>
+                    <a class="navbar-brand ms-4" href="#"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--        Page content go here -->
+        <div class="container-fluid px-4">
+            <div class="container px-4 scroll">
+                <div class="page-title">
+                    <div class="title-span">
+                        <h4>Add Supplier</h4>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-12 mx-auto">
+                        <div class="card py-5 px-3">
+                            <form action="" class="">
+                            <!--          Progress Bar -->
+                                <div class="progressbar d-flex justify-content-between mb-5">
+                                    <div class="progress" id="progress"></div>
+                                    <div class="progress-step progress-step-active" data-title="General Details"></div>
+                                    <div class="progress-step" data-title="Categories"></div>
+                                    <div class="progress-step" data-title="Documents"></div>
+                                    <div class="progress-step" data-title="Banking Details"></div>
+                                </div>
+                            <!--          Progress Bar -->
+                                <div class="form-step form-step-active">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Supplier name">
+                                                <img src="assets/images/icons/factory.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Contact Number">
+                                                <img src="assets/images/icons/phone.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Address">
+                                                <img src="assets/images/icons/mapmarker.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Website">
+                                                <img src="assets/images/icons/globe.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Blank">
+                                                <img src="assets/images/icons/document.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a class="my-4 btn button btn-next" type="submit">Next</a>
+                                    </div>
+                                </div>
+<!------------------      Second Part ----------------------->
+                                <div class="form-step">
+                                <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Supplier name">
+                                                <img src="assets/images/icons/factory.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Contact Number">
+                                                <img src="assets/images/icons/phone.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Address">
+                                                <img src="assets/images/icons/home.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Website">
+                                                <img src="assets/images/icons/globe.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a class="my-4 me-3 btn btn-prev button" type="submit">Previous</a>
+                                        <a class="my-4 btn button btn-next" type="submit">Next</a>
+                                    </div>
+                                </div>
+<!------------------      End Second Part ----------------------->
+                                <!------------------         Third Part ----------------------->
+                                <div class="form-step">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Supplier name">
+                                                <img src="assets/images/icons/factory.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Contact Number">
+                                                <img src="assets/images/icons/phone.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Address">
+                                                <img src="assets/images/icons/home.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Website">
+                                                <img src="assets/images/icons/globe.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a class="my-4 me-3 btn btn-prev button" type="submit">Previous</a>
+                                        <a class="my-4 btn button btn-next" type="submit">Next</a>
+                                    </div>
+                                </div>
+                                <!------------------      End Third Part ----------------------->
+
+                                <!------------------         Fourth Part ----------------------->
+                                <div class="form-step">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Supplier name">
+                                                <img src="assets/images/icons/factory.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Contact Number">
+                                                <img src="assets/images/icons/phone.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Address">
+                                                <img src="assets/images/icons/home.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Email">
+                                                <img src="assets/images/icons/mail.png" alt="">
+                                            </div>
+                                            <div class="input-div">
+                                                <input type="text" placeholder="Website">
+                                                <img src="assets/images/icons/globe.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a class="my-4 me-3 btn btn-prev button" type="submit">Previous</a>
+                                        <a class="my-4 btn button btn-next" type="submit">Next</a>
+                                    </div>
+                                </div>
+                                <!------------------      End Fourth Part ----------------------->
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    var el = document.getElementById("wrapper")
+    var toggleButton = document.getElementById("sidebar-toggle")
+
+    toggleButton.onclick = function () {
+        el.classList.toggle("toggled")
+    }
+
+    const prevBtns = document.querySelectorAll(".btn-prev")
+    const nxtBtns = document.querySelectorAll(".btn-next")
+    const formSteps = document.querySelectorAll(".form-step")
+    const progress = document.getElementById("progress")
+    const progressSteps = document.querySelectorAll(".progress-step")
+    const progressBar = document.getElementById("progress")
+
+    let formStepsNum = 0;
+
+    nxtBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            formStepsNum++;
+            updateFormSteps();
+            updateProgressBar()
+        })
+    })
+    prevBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            formStepsNum--;
+            updateFormSteps();
+            updateProgressBar()
+        })
+    })
+    function updateFormSteps(){
+        formSteps.forEach(formStep => {
+            formStep.classList.contains("form-step-active") &&
+            formStep.classList.remove("form-step-active")
+        })
+        formSteps[formStepsNum].classList.add("form-step-active")
+    }
+    function updateProgressBar() {
+        progressSteps.forEach((progressStep, idx) => {
+            if (idx < formStepsNum + 1) {
+                progressStep.classList.add("progress-step-active");
+            } else {
+                progressStep.classList.remove("progress-step-active")
+            }
+        });
+
+        const progressActive = document.querySelectorAll(".progress-step-active")
+        progress.style.width = ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%"
+    }
+
+
+</script>
+</body>
+</html>
+

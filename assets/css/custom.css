@@ -1,15 +1,54 @@
+/*
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+*/
 :root {
     --dark-blue-color: #1b2c5d;
     --lite-blue-color: #1291c3;
     --main-text-color: #6e6e6e;
     --second-bg-color: #c1efde;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
+/************* Global CSS*************/
 * {
     text-decoration: none;
     list-style: none;
+    font-family: 'Lato', sans-serif;
 }
+
 a {
     text-decoration: none;
+}
+.card {
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+form button,
+form .button {
+    padding: .5rem 4rem !important;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    border-radius: 25px !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    transition: .5s ease;
+}
+form button:hover,
+form .button:hover {
+    background: linear-gradient(to left, #202b59, #1291c3) !important;
+    color: #fff;
+}
+.cta {
+    padding: .4rem 1rem .3rem;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 700;
+    transition: .5s ease;
+}
+.cta:hover {
+    color: #fff;
+    background: linear-gradient(to left, #202b59, #1291c3);
 }
 .rounded-full {
     border-radius: 50%;
@@ -17,6 +56,7 @@ a {
 .text-grey {
     color: #868686 !important;
 }
+/************ End Global CSS************/
 #wrapper {
     overflow-x: hidden;
 }
@@ -155,7 +195,10 @@ a {
     background: linear-gradient(to right, #202b59, #1291c3);
     border-radius: 25px;
     max-width: fit-content;
-    padding: .2rem 1rem .1rem 2.6rem;
+    padding: .35rem 1rem .1rem 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title-span .circle {
     position: absolute;
@@ -168,9 +211,10 @@ a {
     top: 0;
 }
 .title-span h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #fff;
+    /*margin-top: .2rem;*/
 }
 
 .main-grid {
@@ -263,18 +307,7 @@ a {
     top: .8rem;
     width: 18px;
 }
-.login-form button {
-    padding: .5rem 4rem;
-    background: linear-gradient(to right, #202b59, #1291c3);
-    border-radius: 25px;
-    color: #fff;
-    font-weight: 700;
-    transition: .5s ease;
-}
-.login-form button:hover {
-    background: linear-gradient(to left, #202b59, #1291c3);
-    color: #fff;
-}
+
 .login-form a,
 .login-form span {
     color: #868686;
@@ -297,6 +330,84 @@ a {
     color: #fff;
 }
 /**************Login form*************/
+
+/**************Multistep Form Styling*************/
+.form-step {
+    display: none;
+    animation: animate .5s;
+    transform-origin: top;
+}
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+.form-step-active {
+    display: block;
+}
+.progressbar {
+    position: relative;
+    counter-reset: step;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4rem !important;
+}
+.progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    color: #fff;
+    font-weight: 600;
+}
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + .5rem);
+    font-size: .8rem;
+    color: #fff;
+    white-space: nowrap;
+    background: linear-gradient(to right, #202b59, #1291c3);
+    border-radius: 25px;
+    max-width: fit-content;
+    padding: .35rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+.progressbar::before,
+.progress {
+    content: '';
+    position: absolute;
+    height: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: #dcdcdc;
+}
+.progress {
+    background: linear-gradient(to right, #202b59, #1291c3);
+    width: 0;
+    transition: .3s;
+}
+.progress-step-active {
+    background: linear-gradient(to right, #202b59, #1291c3);
+}
+
+/**************Multistep Form Styling*************/
 
 @media (min-width: 768px) {
     #sidebar-wrapper {
