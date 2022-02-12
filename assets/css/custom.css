@@ -311,6 +311,10 @@ form .button:hover {
 .login-form a,
 .login-form span {
     color: #868686;
+    transition: .3s;
+}
+.login-form a:hover {
+    color: var(--dark-blue-color) !important;
 }
 .welcome-col {
     height: 100%;
