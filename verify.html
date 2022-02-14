@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Login</title>
+    <title>Verify</title>
     <meta name="description" content="Tradata website.">
     <meta name="author" content="Tradata">
 
@@ -32,10 +32,13 @@
             <h1>VERIFY EMAIL!</h1>
             <h3 class="pb-2">Enter your email address</h3>
 
-            <form action="" class="login-form px-4">
+            <form action="" class="login-form px-4" id="verify">
                 <div class="input-div">
-                    <input type="text" placeholder="Email">
-                    <img src="assets/images/icons/mail.png" alt="">
+                    <input type="text" id="email" placeholder="Email">
+                    <img class="icon" src="assets/images/icons/mail.png" alt="" style="filter:invert(.3)">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                    <small></small>
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="mb-4">
@@ -73,6 +76,8 @@
     </div>
 </div>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/validation/verify.js"></script>
+
 </body>
 </html>
 

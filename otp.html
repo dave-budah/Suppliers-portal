@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Login</title>
+    <title>OTP</title>
     <meta name="description" content="Tradata website.">
     <meta name="author" content="Tradata">
 
@@ -32,10 +32,13 @@
             <h1>OTP</h1>
             <h3 class="pb-2">Enter your One Time Password</h3>
 
-            <form action="" class="login-form px-4">
+            <form action="" class="login-form px-4" id="otpForm">
                 <div class="input-div">
-                    <input type="text" placeholder="OTP">
-                    <img src="assets/images/icons/lock.png" alt="">
+                    <input type="text" id="otp" placeholder="OTP">
+                    <img class="icon" src="assets/images/icons/lock.png" alt="" style="filter:invert(.6)">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                    <small></small>
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="mb-4">
@@ -73,6 +76,7 @@
     </div>
 </div>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/validation/otp.js"></script>
 </body>
 </html>
 

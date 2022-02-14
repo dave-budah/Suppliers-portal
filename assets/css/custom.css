@@ -289,24 +289,62 @@ form .button:hover {
 .input-div {
     position: relative;
     width: 100%;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
-    padding: .5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.7rem;
 }
 .input-div input {
-    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     width: 100%;
-    margin-left: 2rem;
     outline: none !important;
     background: none;
+    padding: .5rem .5rem .5rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
-.input-div img {
+.input-div input::placeholder,
+.input-div input::-moz-placeholder {
+    margin-left: 1rem;
+}
+.input-div img.icon {
     position: absolute;
     left: 1rem;
     top: .8rem;
-    width: 18px;
+    width: 16px;
 }
+
+/**** Error Success Styling*****/
+.input-div img.info {
+    position: absolute;
+    right: 1rem !important;
+    top: .8rem;
+    width: 18px;
+    visibility: hidden;
+}
+.input-div small {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    color: red;
+    font-size: .8rem;
+    visibility: hidden;
+}
+.input-div.error small {
+    visibility: visible;
+}
+.input-div.error input {
+    border: 1px solid #FF0000FF;
+    box-shadow: rgba(205, 135, 135, 0.35) 0 5px 10px;
+}
+.input-div.success input {
+    border: 1px solid #008000FF;
+    box-shadow: rgba(142, 208, 71, 0.35) 0 5px 10px;
+}
+.input-div.success img.checkmark {
+    visibility: visible;
+}
+.input-div.error img.warning {
+    visibility: visible;
+}
+/**** Error Success Styling*****/
 
 .login-form a,
 .login-form span {

@@ -32,26 +32,41 @@
 <!--            <h1>HELLO!</h1>-->
             <h3 class="pb-2">Sign-up to proceed</h3>
 
-            <form action="" class="login-form px-4">
+            <form action="" class="login-form px-4" id="form">
                 <div class="input-div">
-                    <input type="text" placeholder="Username">
-                    <img src="assets/images/icons/user.png" alt="" style="filter:invert(.4)">
+                    <input type="text" id="username" placeholder="Username">
+                    <img class="icon" src="assets/images/icons/user.png" alt="" style="filter:invert(.4)">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                     <small></small>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Email">
-                    <img src="assets/images/icons/mail.png" alt="" style="filter:invert(.3)">
+                    <input type="text" id="email" placeholder="Email">
+                    <img class="icon" src="assets/images/icons/mail.png" alt="" style="filter:invert(.3)">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                     <small></small>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Phone Number">
-                    <img src="assets/images/icons/phone.png" alt="" style="filter:invert(.6)">
+                    <input type="text" id="phonenumber" placeholder="Phone Number">
+                    <img class="icon" src="assets/images/icons/phone.png" alt="" style="filter:invert(.6)">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                     <small></small>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Password">
-                    <img src="assets/images/icons/lock.png" alt="">
+                    <input type="password" id="password" placeholder="Password">
+                    <img class="icon" src="assets/images/icons/lock.png" alt="">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                     <small></small>
                 </div>
                 <div class="input-div">
-                    <input type="text" placeholder="Confirm Password">
-                    <img src="assets/images/icons/lock.png" alt="">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+                    <img class="icon" src="assets/images/icons/lock.png" alt="">
+                    <img class="info checkmark" src="assets/images/icons/ok.png" alt="">
+                    <img class="info warning" src="assets/images/icons/warning.png" alt="">
+                     <small></small>
                 </div>
                 <div class="d-flex justify-content-between">
                     <div class="mb-4">
@@ -86,6 +101,7 @@
     </div>
 </div>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/validation/custom.js"></script>
 </body>
 </html>
 
