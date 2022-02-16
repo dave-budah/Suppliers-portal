@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Procurement</title>
+    <meta name="description" content="Tradata website.">
+    <meta name="author" content="Tradata">
+
+    <meta property="og:title" content="Tradata website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tradata.app">
+    <meta property="og:description" content="Tradata website.">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!--    Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>-->
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/js/validation/custom.js">
+
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+    <!--    Sidebar -->
+    <div class="" id="sidebar-wrapper">
+        <div class="sidebar-heading align-items-center">
+            <img src="assets/images/profile.png" class="rounded-full" alt="logo">
+            <span>Username</span>
+        </div>
+
+        <ul class="my-3 bg-transparent menu-links">
+            <li><a href="procurement.html" class="bg-transparent">
+                Procurement
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="index.html" class="bg-transparent">
+                Home
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="" class="bg-transparent">
+                Dashboard
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="" class="bg-transparent">
+                Budgeting
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="invites.html" class="bg-transparent">
+                Invites
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+            <li><a href="verify.html" class="bg-transparent">
+                Settings
+            </a>
+                <img class="white-arrow" src="assets/images/icons/white-arrow.png" alt="" width="20">
+            </li>
+
+        </ul>
+    </div>
+    <!--    Sidebar -->
+
+
+    <!--        Pages Go Here -->
+
+    <div id="page-content-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <button type="button" id="sidebar-toggle"><img src="assets/images/icons/menu.png" alt="" width="30"></button>
+                    <a class="navbar-brand ms-4" href="#"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--        Page content go here -->
+        <div class="container-fluid px-4">
+            <div class="container px-4 scroll">
+                <div class="page-title d-flex justify-content-between">
+                    <div class="title-span">
+                        <h4>Procurement</h4>
+                        <div class="circle"><img src="assets/images/icons/risk.png" alt=""></div>
+                    </div>
+
+                    <div class="title-span no-circle">
+                        <h4>New Supply Requisitions</h4>
+                    </div>
+                </div>
+
+               <div class="mt-4 mb-2 bottom-border border-1">
+                   <p class="small text-muted">View all supply requisitions within a range plus all incomplete requisitions regardless of date.</p>
+               </div>
+
+                <div class="title-span no-circle requisitions-title-block mx-auto">
+                    <a href="#"><img src="assets/images/icons/document.png" class="req-icon" alt="">SUPPLY REQUISITIONS</a>
+                    <a href="#"><img src="assets/images/icons/document.png" class="req-icon" alt="">CASH REQUISITIONS</a>
+                    <a href="#"><img src="assets/images/icons/document.png" class="req-icon" alt="">CAPEX REQUISITIONS</a>
+                    <a href="#"><img src="assets/images/icons/document.png" class="req-icon" alt="">STORES REQUISITIONS</a>
+                </div>
+
+                <div class="row" id="filter-row">
+                    <div class="col-md-6">
+                        <div class="input-group my-3">
+                            <span class="input-group-text" id="view-requisitions">View Requisitions From</span>
+                            <select class="form-select" aria-label="Select company">
+                                <option selected>All Companies</option>
+                                <option value="1">C One</option>
+                                <option value="2">C Two</option>
+                                <option value="3">C Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group my-3">
+                            <span class="input-group-text" id="date-range">Select Date Range</span>
+                            <input type="text" class="form-control bg-light" id="date-range-input" aria-describedby="date-range">
+                            <span class="input-group-text bg-dark text-white" id="filter">Filter</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-4 w-25">
+                    <div class="input-group my-3">
+                        <span class="input-group-text bg-transparent border-0" id="entries">Select</span>
+                        <select class="form-select bg-light" aria-label="counter filter" id="filter-count">
+                            <option selected>10</option>
+                            <option value="1">15</option>
+                            <option value="2">25</option>
+                            <option value="3">30</option>
+                        </select>
+                        <span class="input-group-text bg-transparent border-0">Entries</span>
+                    </div>
+                </div>
+
+<!--                Search Field -->
+                <div class="my-4 d-flex justify-content-end">
+                    <div class="title-span no-circle">
+                        <div class="input-group search-group">
+                            <button class="input-group-text bg-transparent border-0" id="searches"><img src="assets/images/icons/search.png" width="14" alt=""></button>
+                            <input type="text" class="form-control bg-transparent border-0" id="search" aria-describedby="search" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+
+<!--                Main table-->
+               <div class="table-container">
+                   <table class="table" id="requisitions-table">
+                       <thead style="border-radius: 25px;">
+                       <tr>
+                           <th scope="col">Requisition ID</th>
+                           <th scope="col">Organization</th>
+                           <th scope="col">Title</th>
+                           <th scope="col">Product Category</th>
+                           <th scope="col">Approved</th>
+                           <th scope="col">Date Requested</th>
+                           <th scope="col">Department</th>
+                           <th scope="col">Stage</th>
+                           <th scope="col">Status</th>
+                       </tr>
+                       </thead>
+                       <tbody>
+                       <tr>
+                           <th scope="row">1</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>adipisicing</td>
+                           <td>Lorem</td>
+                           <td> amet</td>
+                           <td>dolor</td>
+                           <td>
+                               <span class="pt-0 text-white title-span no-circle">
+                                   Requisition
+                               </span>
+                               Stage 1 of 6</td>
+                           <td>
+                                <span class="pt-0 text-white title-span no-circle" style="white-space: nowrap;">
+                                  <img class="me-1" src="assets/images/icons/white-arrow.png" alt="" width="12"> On Going
+                               </span>
+                           </td>
+                       </tr>
+                       <tr>
+                           <th scope="row">2</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>adipisicing</td>
+                           <td>Lorem</td>
+                           <td> amet</td>
+                           <td>dolor</td>
+                           <td>amet</td>
+                           <td>elit</td>
+                       </tr>
+                       <tr>
+                           <th scope="row">3</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>adipisicing</td>
+                           <td>Lorem</td>
+                           <td> amet</td>
+                           <td>dolor</td>
+                           <td>amet</td>
+                           <td>elit</td>
+                       </tr>
+                       </tbody>
+                   </table>
+               </div>
+<!--                Main table-->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    var el = document.getElementById("wrapper")
+    var toggleButton = document.getElementById("sidebar-toggle")
+
+    toggleButton.onclick = function () {
+        el.classList.toggle("toggled")
+    }
+</script>
+</body>
+</html>

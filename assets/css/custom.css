@@ -24,6 +24,7 @@ a {
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
 }
+
 form button,
 form .button {
     padding: .5rem 4rem !important;
@@ -200,6 +201,9 @@ form .button:hover {
     justify-content: center;
     align-items: center;
 }
+.no-circle {
+    padding: .35rem 1rem .1rem 1rem;
+}
 .title-span .circle {
     position: absolute;
     width: 2rem;
@@ -209,6 +213,14 @@ form .button:hover {
     background: linear-gradient(to right, #202b59, #1291c3);
     left: 0;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-span .circle img {
+    width: 16px;
+    margin: auto;
+    filter: invert(1);
 }
 .title-span h4 {
     font-size: 14px;
@@ -450,6 +462,45 @@ form .button:hover {
 }
 
 /**************Multistep Form Styling*************/
+
+
+/**************Procurement table*************/
+.requisitions-title-block a {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 4rem .3rem 4rem;
+}
+.requisitions-title-block .req-icon {
+    filter: invert(1);
+    width: 16px;
+}
+#searches img {
+    filter: invert(1);
+}
+#search::placeholder {
+    color: #fff;
+    font-weight: 500;
+}
+input:focus,
+select:focus {
+    outline: none;
+    box-shadow: none;
+}
+.table-container,
+#requisitions-table {
+    border-radius: 15px;
+    border-collapse: separate !important;
+    border-spacing: 0;
+    overflow: hidden !important;
+}
+#requisitions-table thead {
+    background: linear-gradient(to right, #202b59, #1291c3);
+    color: #fff;
+}
+#requisitions-table td span {
+    font-size: 12px;
+}
+/**************Procurement table*************/
 
 @media (min-width: 768px) {
     #sidebar-wrapper {
