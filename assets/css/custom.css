@@ -303,7 +303,8 @@ form .button:hover {
     width: 100%;
     margin-bottom: 2.7rem;
 }
-.input-div input {
+.input-div input,
+.input-div select {
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     width: 100%;
@@ -312,6 +313,18 @@ form .button:hover {
     padding: .5rem .5rem .5rem 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0);
 }
+.input-div input:focus,
+.input-div select:focus {
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    width: 100%;
+    outline: none !important;
+    background: none;
+    padding: .5rem .5rem .5rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.input-div select::placeholder,
+.input-div select::-moz-placeholder,
 .input-div input::placeholder,
 .input-div input::-moz-placeholder {
     margin-left: 1rem;
@@ -322,7 +335,31 @@ form .button:hover {
     top: .8rem;
     width: 16px;
 }
+.fileUpload {
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    width: 100%;
+    outline: none !important;
+    background: none;
+    padding: .5rem .5rem .5rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
 
+.fileUpload .placeholder {
+    color: gray;
+}
+.fileUpload input[type="file"] {
+    opacity: 0;
+    width: 3rem;
+    height: .5rem;
+    position: absolute;
+    cursor: pointer;
+}
+.file-name {
+    position: absolute;
+    left: 8rem;
+    top: .5rem;
+}
 /**** Error Success Styling*****/
 .input-div img.info {
     position: absolute;
@@ -342,10 +379,12 @@ form .button:hover {
 .input-div.error small {
     visibility: visible;
 }
+.input-div.error select,
 .input-div.error input {
     border: 1px solid #FF0000FF;
     box-shadow: rgba(205, 135, 135, 0.35) 0 5px 10px;
 }
+.input-div.success select,
 .input-div.success input {
     border: 1px solid #008000FF;
     box-shadow: rgba(142, 208, 71, 0.35) 0 5px 10px;

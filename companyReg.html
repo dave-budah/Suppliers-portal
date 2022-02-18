@@ -152,12 +152,19 @@
                                 <div class="row">
                                         <div class="col-md-6">
                                             <div class="input-div">
-                                                <input type="text" placeholder="Supplier name">
+                                                <select class="form-select" aria-label="Select input field">
+                                                    <option selected>Select option</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
                                                 <img class="icon" src="assets/images/icons/factory.png" alt="">
                                             </div>
-                                            <div class="input-div">
-                                                <input type="text" placeholder="Contact Number">
-                                                <img class="icon" src="assets/images/icons/phone.png" alt="">
+                                            <div class="input-div fileUpload">
+                                                <input type="file" id="file">
+                                                <img class="icon" src="assets/images/icons/upload.png" alt="">
+                                                <span class="placeholder">Add file</span>
+                                                <p class="file-name"></p>
                                             </div>
                                             <div class="input-div">
                                                 <input type="text" placeholder="Address">
@@ -275,6 +282,22 @@
     </div>
 </div>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Input file javascript -->
+<script>
+    const file = document.querySelector('#file');
+    file.addEventListener('change', (e) => {
+        // Get the selected file
+        const [file] = e.target.files;
+        // Get the file name and size
+        const { name: fileName, size } = file;
+        // Convert size in bytes to kilo bytes
+        const fileSize = (size / 1000).toFixed(2);
+        // Set the text content
+        const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+        document.querySelector('.file-name').textContent = fileNameAndSize;
+    });
+</script>
 <script>
     var el = document.getElementById("wrapper")
     var toggleButton = document.getElementById("sidebar-toggle")

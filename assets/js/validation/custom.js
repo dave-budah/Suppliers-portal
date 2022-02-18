@@ -85,3 +85,5 @@ function isPhone(phonenumber) {
 function isPassword(password) {
     return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,100}$/.test(password)
 }
+
+
